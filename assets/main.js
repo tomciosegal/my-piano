@@ -51,12 +51,12 @@ class Piano {
         }
     }
 
-    playEvent(){
+    playEvent() {
         document.querySelector('#play').addEventListener('click', this.playRecord.bind(this));
     }
 
-    playRecord(){
-        for(let m of this.music){
+    playRecord() {
+        for (let m of this.music) {
             const playAudio = document.createElement('audio');
             playAudio.src = 'assets/notes/' + m;
             playAudio.play();
