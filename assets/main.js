@@ -114,8 +114,6 @@ class Piano {
             li.style.float = 'none';
             li.dataset.audio = JSON.stringify(ourSong.audio);
             savedSongs.appendChild(li);
-
-
         }
     }
 
